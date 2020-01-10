@@ -1,6 +1,6 @@
-;;; vscode-default-dark-theme.el --- A complete port of the default Visual Studio Code Dark+ theme for Emacs
+;;; vscode-dark-plus-theme.el --- A complete port of the default Visual Studio Code Dark+ theme for Emacs
 
-;; Copyright (C) 2019 , Ian Y.E. Pan
+;; Copyright (C) 2020 , Ian Y.E. Pan
 
 ;; Author: Ian Y.E. Pan
 
@@ -23,7 +23,7 @@
 
 ;;; Code:
 
-(deftheme vscode-default-dark)
+(deftheme vscode-dark-plus)
 (let ((class '((class color) (min-colors 89)))
       (fg0     "#AEAFAD")
       (fg1     "#d4d4d4")
@@ -54,7 +54,7 @@
       (var     "#85DDFF")
       (warning "#ef2929"))
   (custom-theme-set-faces
-   'vscode-default-dark
+   'vscode-dark-plus
    `(default ((,class (:background ,bg1 :foreground ,fg1))))
 
    `(company-preview-common ((t (:foreground unspecified :background ,bg2))))
@@ -322,6 +322,6 @@
    `(sml/modes     ((t :foreground ,fg1 :weight normal)))
    ))
 
-(provide-theme 'vscode-default-dark)
+(provide-theme 'vscode-dark-plus)
 
 ;;; wilmersdorf-theme.el ends here
