@@ -20,14 +20,14 @@
 
 #### Installation: manual install
 
-Download `vscode-default-dark-theme.el` and put it under `~/.emacs.d/themes/` (or `~/.config/emacs/themes/`), then add these lines to your `init.el`:
+Download `vscode-dark-plus-theme.el` and put it under `~/.emacs.d/themes/` (or `~/.config/emacs/themes/`), then add these lines to your `init.el`:
 
 ```
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
 # or
 (add-to-list 'custom-theme-load-path "~/.config/emacs/themes/")
 
-(load-theme vscode-default-dark t)
+(load-theme vscode-dark-plus t)
 ```
 
 #### Screenshots
