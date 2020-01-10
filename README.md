@@ -18,6 +18,11 @@
 <br/>
 <br/>
 
+#### Note:
+
+This is the default Visual Studio Code Dark+ theme (the more **colorful** one), if you're looking for the **more minimal Dark** theme, it's [here](https://github.com/ianpan870102/vscode-dark-emacs-theme).
+
+
 #### Installation: manual install
 
 Download `vscode-dark-plus-theme.el` and put it under `~/.emacs.d/themes/` (or `~/.config/emacs/themes/`), then add these lines to your `init.el`:
