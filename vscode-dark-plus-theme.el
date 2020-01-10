@@ -1,4 +1,4 @@
-;;; vscode-default-dark-theme.el --- A port of the classic old-school theme
+;;; vscode-default-dark-theme.el --- A complete port of the default Visual Studio Code Dark+ theme for Emacs
 
 ;; Copyright (C) 2019 , Ian Y.E. Pan
 
