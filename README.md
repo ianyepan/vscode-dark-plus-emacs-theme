@@ -32,7 +32,7 @@ Download `vscode-dark-plus-theme.el` and put it under `~/.emacs.d/themes/` (or `
 # or
 (add-to-list 'custom-theme-load-path "~/.config/emacs/themes/")
 
-(load-theme vscode-dark-plus t)
+(load-theme 'vscode-dark-plus t)
 ```
 
 #### Screenshots
