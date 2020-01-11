@@ -289,7 +289,7 @@
    `(solaire-org-hide-face ((t (:inherit org-hide :background ,bg2))))
 
    `(ivy-confirm-face ((t (:inherit minibuffer-prompt :foreground ,keyword))))
-   `(ivy-current-match ((t (:background "#08304C"))))
+   `(ivy-current-match ((t (:background "#08304C" :extend t))))
    `(ivy-highlight-face ((t (:inherit font-lock-builtin-face))))
    `(ivy-match-required-face ((t (:inherit minibuffer-prompt :foreground ,warning))))
    `(ivy-minibuffer-match-face-1 ((t (:inherit isearch))))
