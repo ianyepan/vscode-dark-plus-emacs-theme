@@ -321,8 +321,8 @@
    `(sml/read-only ((t :foreground ,fg1 :weight normal)))
    `(sml/modes     ((t :foreground ,fg1 :weight normal)))
 
-   `(evil-ex-substitute-matches     ((t :background "#553333" :foreground ,tw-r :weight bold :strike-through t)))
-   `(evil-ex-substitute-replacement ((t :background "#355533" :foreground ,tw-g :weight bold)))
+   `(evil-ex-substitute-matches     ((t :foreground "#ff0000" :weight bold :strike-through t)))
+   `(evil-ex-substitute-replacement ((t :foreground "#0ff000" :weight bold)))
    ))
 
 (provide-theme 'vscode-dark-plus)
