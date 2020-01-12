@@ -288,6 +288,7 @@
    `(solaire-hl-line-face ((t (:inherit hl-line :background ,bg3))))
    `(solaire-org-hide-face ((t (:inherit org-hide :background ,bg2))))
 
+
    `(ivy-confirm-face ((t (:inherit minibuffer-prompt :foreground ,keyword))))
    `(ivy-current-match ((t (:background "#08304C" :extend t))))
    `(ivy-highlight-face ((t (:inherit font-lock-builtin-face))))
@@ -307,7 +308,8 @@
    `(swiper-match-face-2 ((t (:inherit ivy-minibuffer-match-face-2))))
    `(swiper-match-face-3 ((t (:inherit ivy-minibuffer-match-face-3))))
    `(swiper-match-face-4 ((t (:inherit ivy-minibuffer-match-face-4))))
-   `(swiper-line-face ((t (:foreground ,fg0 :background ,bg4))))
+   `(swiper-line-face ((t (:foreground ,fg0 :background ,bg4 :extend t))))
+
 
    `(diff-hl-insert ((t (:foreground ,tw-g))))
    `(diff-hl-delete ((t (:foreground ,tw-r))))
@@ -318,6 +320,9 @@
    `(sml/prefix    ((t :foreground ,fg1 :weight normal)))
    `(sml/read-only ((t :foreground ,fg1 :weight normal)))
    `(sml/modes     ((t :foreground ,fg1 :weight normal)))
+
+   `(evil-ex-substitute-matches     ((t :background "#553333" :foreground ,tw-r :weight bold :strike-through t)))
+   `(evil-ex-substitute-replacement ((t :background "#355533" :foreground ,tw-g :weight bold)))
    ))
 
 (provide-theme 'vscode-dark-plus)
