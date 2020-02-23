@@ -35,6 +35,18 @@ Download `vscode-dark-plus-theme.el` and put it under `~/.emacs.d/themes/` (or `
 (load-theme 'vscode-dark-plus t)
 ```
 
+#### Installation: Use-Package & Straight
+
+Requires [Use-Package](https://github.com/jwiegley/use-package) and [Straight.el](https://github.com/raxod502/straight.el)
+Add these lines to your 'init.el':
+```
+(use-package vscode-dark-plus-theme
+  :straight (:host github :repo "ianpan870102/vscode-dark-plus-emacs-theme")
+  :custom
+  (add-to-list 'custom-theme-load-path "~/.emacs.d/straight/repos/vscode-dark-plus-emacs-theme/")
+  (load-theme 'vscode-dark-plus t))
+```
+
 #### Screenshots
 
 ![alt text](./screenshots/solaire.png)
