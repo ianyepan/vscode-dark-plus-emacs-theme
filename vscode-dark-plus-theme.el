@@ -21,6 +21,21 @@
 
 ;;; Commentary:
 
+;; Official colors from Microsoft's Visual Studio Code:
+;; "#DCDCAA"
+;; "#4EC9B0"
+;; "#C586C0"
+;; "#9CDCFE"
+;; "#51B6C4",
+;; "#CE9178"
+;; "#d16969"
+;; "#d7ba7d"
+;; "#569cd6"
+;; "#C8C8C8"
+;; "#d4d4d4"
+;; "#b5cea8"
+;; "#f44747"
+
 ;;; Code:
 
 (deftheme vscode-dark-plus)
@@ -40,22 +55,23 @@
       (tw-r              "#A41511")
       (tw-g              "#4A7F00")
       (tw-b              "#207FA1")
-      (key2              "#db8e73")
-      (key3              "#85ddff")
+      (key2              "#CE9178")
+      (key3              "#9cdcfe")
       (accent            "#ffffff")
       (mode-line-bg      "#237AD3")
       (mode-line-bg-dark "#005Aa3")
       (line-num          "#838383")
-      (builtin           "#d4d4d4")
-      (keyword           "#339cdb")
-      (const             "#339CDB")
+      (builtin           "#C586C0")
+      (keyword           "#569cd6")
+      (const             "#569cd6")
       (comment           "#579C4C")
-      (doc               "#777778")
-      (func              "#D9DAA2")
-      (str               "#DB8E73")
-      (type              "#35CDAF")
-      (var               "#85DDFF")
-      (warning           "#ef2929"))
+      (doc               "#888888")
+      (func              "#DCDCAA")
+      (str               "#CE9178")
+      (type              "#4ec9b0")
+      (var               "#9cdcfe")
+      (numeric           "#b5cea8")
+      (warning           "#f44747"))
   (custom-theme-set-faces
    'vscode-dark-plus
    `(default                                  ((,class (:background ,bg1 :foreground ,fg1))))
@@ -82,7 +98,7 @@
 
    `(region                                   ((,class (:background ,bg-hl))))
    `(highlight                                ((,class (:foreground ,bg3 :background ,fg3))))
-   `(hl-line                                  ((,class (:background  ,bg2))))
+   `(hl-line                                  ((,class (:background ,bg3))))
    `(fringe                                   ((,class (:background ,bg1 :foreground ,fg4))))
    `(cursor                                   ((,class (:background ,fg1))))
    `(show-paren-match-face                    ((,class (:background ,warning))))
@@ -206,7 +222,7 @@
    `(magit-item-highlight                     ((,class :background ,bg3)))
    `(magit-section-heading                    ((,class (:foreground ,keyword :weight normal))))
    `(magit-hunk-heading                       ((,class (:background ,bg3))))
-   `(magit-section-highlight                  ((,class (:background ,bg2))))
+   `(magit-section-highlight                  ((,class (:background ,bg3))))
    `(magit-hunk-heading-highlight             ((,class (:background ,bg3))))
    `(magit-diff-context-highlight             ((,class (:background ,bg3 :foreground ,fg3))))
    `(magit-diffstat-added                     ((,class (:foreground ,type))))
@@ -321,7 +337,7 @@
    `(ivy-minibuffer-match-face-4              ((t (:inherit ivy-minibuffer-match-face-2))))
    `(ivy-minibuffer-match-highlight           ((t (:inherit ivy-current-match))))
    `(ivy-modified-buffer                      ((t (:inherit default :foreground ,var))))
-   `(ivy-virtual                              ((t (:inherit default :foreground ,comment))))
+   `(ivy-virtual                              ((t (:inherit default :foreground ,doc))))
    `(ivy-posframe                             ((t (:background "#252526"))))
 
    `(counsel-key-binding                      ((t (:foreground ,var))))
@@ -360,6 +376,8 @@
    `(evil-ex-substitute-replacement           ((t (:foreground ,type :weight normal))))
 
    `(hl-todo                                  ((t (:inverse-video t))))
+   `(highlight-numbers-number                 ((t (:foreground ,numeric))))
+   `(highlight-operators-face                 ((t (:foreground ,fg1))))
    ))
 
 (provide-theme 'vscode-dark-plus)
