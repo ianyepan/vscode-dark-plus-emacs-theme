@@ -35,6 +35,7 @@
 ;; "#d4d4d4"
 ;; "#b5cea8"
 ;; "#f44747"
+;; "#6A9955"
 
 ;;; Code:
 
@@ -64,7 +65,7 @@
       (builtin           "#C586C0")
       (keyword           "#569cd6")
       (const             "#569cd6")
-      (comment           "#579C4C")
+      (comment           "#6A9955")
       (doc               "#888888")
       (func              "#DCDCAA")
       (str               "#CE9178")
