@@ -336,9 +336,9 @@
    `(git-gutter-fr:deleted                    ((t (:background ,tw-r :foreground ,tw-r :weight normal))))
    `(git-gutter-fr:modified                   ((t (:background ,tw-b :foreground ,tw-b :weight normal))))
 
-   `(diff-hl-insert                           ((t (:foreground ,tw-g))))
-   `(diff-hl-delete                           ((t (:foreground ,tw-r))))
-   `(diff-hl-change                           ((t (:foreground ,tw-b))))
+   `(diff-hl-insert                           ((t (:background ,tw-g :foreground ,tw-g))))
+   `(diff-hl-delete                           ((t (:background ,tw-r :foreground ,tw-r))))
+   `(diff-hl-change                           ((t (:background ,tw-b :foreground ,tw-b))))
 
    ;; neotree
    `(neo-dir-link-face                       ((t (:foreground "#cccccc" :family "Sans Serif"))))
