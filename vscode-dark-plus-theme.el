@@ -114,6 +114,7 @@
    `(minibuffer-prompt                        ((,class (:foreground ,ms-bluegreen :weight normal))))
    `(default-italic                           ((,class (:italic t))))
    `(link                                     ((,class (:foreground ,const :underline t))))
+   `(error                                    ((,class (:foreground ,ms-orange))))
    `(warning                                  ((,class (:foreground ,ms-magenta))))
    `(success                                  ((,class (:foreground ,ms-bluegreen))))
    `(dired-directory                          ((t (:inherit (font-lock-keyword-face)))))
@@ -132,6 +133,7 @@
    `(company-tooltip                          ((t (:inherit default :background ,bg2))))
    `(company-tooltip-common                   ((t (:foreground ,ms-blue :bold t))))
    `(company-tooltip-selection                ((t (:background ,bg-hl))))
+   `(company-tooltip-annotation               ((t (:foreground ,doc)))) ; parameter hints etc.
 
    `(org-document-title                       ((,class (:foreground ,type :height 1.2 :bold t))))
    `(org-level-1                              ((,class (:bold nil :foreground ,ms-bluegreen :height 1.1))))
@@ -355,7 +357,7 @@
    `(helm-source-go-package-godoc-description ((,class (:foreground ,str))))
    `(helm-bookmark-w3m                        ((,class (:foreground ,type))))
 
-   `(web-mode-html-bracket-face               ((,class (:foreground "#808080"))))
+   `(web-mode-html-tag-bracket-face           ((,class (:foreground "#808080"))))
    `(web-mode-html-tag-face                   ((,class (:foreground ,keyword))))
    `(web-mode-html-attr-name-face             ((,class (:foreground ,var))))
    `(web-mode-html-attr-value-face            ((,class (:foreground ,str))))
@@ -455,7 +457,7 @@
    `(sml/modes                                ((t (:foreground ,fg1 :weight normal))))
 
    `(evil-ex-substitute-matches               ((t (:foreground ,warning :weight normal :strike-through t))))
-   `(evil-ex-substitute-replacement           ((t (:foreground ,type :weight normal))))
+   `(evil-ex-substitute-replacement           ((t (:foreground ,ms-bluegreen :weight normal))))
 
    `(hl-todo                                  ((t (:inverse-video t))))
    `(highlight-numbers-number                 ((t (:foreground ,ms-lightgreen))))
