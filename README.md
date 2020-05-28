@@ -16,7 +16,6 @@
 <p align="center">A complete port of the default Visual Studio Code Dark+ theme for Emacs</p>
 
 <br/>
-<br/>
 
 #### Note:
 
@@ -47,11 +46,21 @@ Add these lines to your 'init.el':
   (load-theme 'vscode-dark-plus t))
 ```
 
-#### Screenshots
+#### Screenshots of various modes
 
-![alt text](./screenshots/solaire.png)
+<!-- ![alt text](./screenshots/solaire.png) -->
 
-![alt text](./screenshots/posframe.png)
+<!-- ![alt text](./screenshots/posframe.png) -->
+
+![alt text](./screenshots/jsx1.png)
+
+![alt text](./screenshots/diff.png)
+
+![alt text](./screenshots/cpp.png)
+
+![alt text](./screenshots/html.png)
+
+![alt text](./screenshots/jsx2.png)
 
 
 Copyright© 2020 Ian Y.E. Pan
