@@ -1,8 +1,10 @@
-;;; vscode-dark-plus-theme.el --- A complete port of the default Visual Studio Code Dark+ theme for Emacs
+;;; vscode-dark-plus-theme.el --- Default Visual Studio Code Dark+ theme -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2020 , Ian Y.E. Pan
+;; Copyright (C) 2020 Ian Y.E. Pan
 
 ;; Author: Ian Y.E. Pan
+;; URL: https://github.com/ianpan870102/vscode-dark-plus-emacs-theme
+;; Version: 1.1.0
 
 ;; This program is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -15,11 +17,12 @@
 ;; GNU General Public License for more details.
 
 ;; You should have received a copy of the GNU General Public License
-;; along with this program. If not, see <http://www.gnu.org/licenses/>.
+;; along with this program. If not, see <https://www.gnu.org/licenses/>.
 
 ;; This file is not part of Emacs.
 
 ;;; Commentary:
+;; A complete port of the default Visual Studio Dark+ theme.
 
 ;; Official colors from Microsoft's Visual Studio Code:
 ;; "#DCDCAA"
@@ -53,12 +56,13 @@
       (bg3               "#313131")
       (bg4               "#4b474c")
       (bg-hl             "#124f7b")
-      (tw-r              "#A41511")
-      (tw-g              "#4A7F00")
-      (tw-b              "#207FA1")
+      (vc-r              "#A41511")
+      (vc-g              "#4A7F00")
+      (vc-b              "#207FA1")
       (key2              "#CE9178")
       (key3              "#9cdcfe")
       (accent            "#ffffff")
+      (numeric           "#b5cea8")
       (mode-line-bg      "#007acc")
       (mode-line-bg-dark "#005Aa3")
       (line-num          "#838383")
@@ -71,7 +75,7 @@
       (str               "#CE9178")
       (type              "#4ec9b0")
       (var               "#9cdcfe")
-      (warning           "#f44747")
+      (warning           "#f16969")
 
       ;; standardized palette
       (ms-yellow         "#DCDCAA")
@@ -80,10 +84,18 @@
       (ms-lightblue      "#9CDCFE")
       (ms-orange         "#CE9178")
       (ms-red            "#d16969")
-      (ms-blue           "#569cd6")
-      (ms-lightgreen     "#b5cea8")
       (ms-green          "#6A9955")
-      )
+      (ms-blue           "#569cd6")
+      (ms-lightred       "#f19999")
+      (ms-lightgreen     "#b5cea8")
+      (ms-lightblue      "#9CDCFE")
+      (ms-red-bg         "#551b1e")
+      (ms-blue-bg        "#040E3F")
+      (ms-green-bg       "#39422a")
+      (ms-red-bghl       "#74140f")
+      (ms-blue-bghl      "#141E4F")
+      (ms-green-bghl     "#4b5332"))
+
   (custom-theme-set-faces
    'vscode-dark-plus
    `(default                                  ((,class (:background ,bg1 :foreground ,fg1))))
@@ -234,23 +246,6 @@
    `(rainbow-delimiters-depth-9-face          ((,class :foreground "LightSkyBlue")))
    `(rainbow-delimiters-unmatched-face        ((,class :foreground ,warning)))
 
-   ;;;;; Old magit faces
-   ;; `(magit-item-highlight                     ((,class :background ,bg3)))
-   ;; `(magit-section-heading                    ((,class (:foreground ,keyword :weight normal))))
-   ;; `(magit-hunk-heading                       ((,class (:background ,bg3))))
-   ;; `(magit-section-highlight                  ((,class (:background ,bg3))))
-   ;; `(magit-hunk-heading-highlight             ((,class (:background ,bg3))))
-   ;; `(magit-diff-context-highlight             ((,class (:background ,bg3 :foreground ,fg3))))
-   ;; `(magit-diffstat-added                     ((,class (:foreground ,type))))
-   ;; `(magit-diffstat-removed                   ((,class (:foreground ,var))))
-   ;; `(magit-process-ok                         ((,class (:foreground ,func :weight normal))))
-   ;; `(magit-process-ng                         ((,class (:foreground ,warning :weight normal))))
-   ;; `(magit-branch                             ((,class (:foreground ,const :weight normal))))
-   ;; `(magit-log-author                         ((,class (:foreground ,fg3))))
-   ;; `(magit-hash                               ((,class (:foreground ,fg2))))
-   ;; `(magit-diff-file-header                   ((,class (:foreground ,fg2 :background ,bg3))))
-
-   ;;;;; New magit faces (adpated from sanityinc-tomorrow themes)
    `(magit-item-highlight                     ((,class :background ,bg3)))
    `(magit-hunk-heading                       ((,class (:background ,bg3))))
    `(magit-hunk-heading-highlight             ((,class (:background ,bg3))))
@@ -265,21 +260,21 @@
    `(magit-branch-remote                      ((t (:foreground ,ms-green))))
    `(magit-cherry-equivalent                  ((t (:foreground ,ms-magenta))))
    `(magit-cherry-unmatched                   ((t (:foreground ,ms-bluegreen))))
-   ;; `(magit-diff-added                         ((t (:foreground ,ms-green :extend t))))
-   ;; `(magit-diff-added-highlight               ((t (:foreground ,ms-green :background ,bg3 :extend t))))
-   ;; `(magit-diff-base                          ((t (:foreground ,bg1 :background ,ms-orange :extend t))))
-   ;; `(magit-diff-base-highlight                ((t (:foreground ,ms-orange :background ,bg3 :extend t))))
-   ;; `(magit-diff-context                       ((t (:foreground ,comment :extend t))))
-   ;; `(magit-diff-file-header                   ((,class (:foreground ,fg2 :background ,bg3))))
-   ;; `(magit-diff-file-heading                  ((t (:foreground ,fg1 :extend t))))
-   ;; `(magit-diff-file-heading-highlight        ((t (:background ,bg3 :extend t))))
-   ;; `(magit-diff-file-heading-selection        ((t (:foreground ,ms-orange :background ,bg3 :extend t))))
-   ;; `(magit-diff-hunk-heading                  ((t (:foreground ,fg1 :background ,bg3 :extend t))))
-   ;; `(magit-diff-hunk-heading-highlight        ((t (:background ,bg3 :extend t))))
-   ;; `(magit-diff-lines-heading                 ((t (:foreground ,ms-yellow :background ,ms-red :extend t))))
-   ;; `(magit-diff-removed                       ((t (:foreground ,ms-orange :extend t))))
-   ;; `(magit-diff-removed-highlight             ((t (:foreground ,ms-orange :background ,bg3 :extend t))))
-   `(magit-diff-context-highlight             ((,class (:background ,bg3 :foreground ,fg3))))
+   `(magit-diff-added                         ((t (:foreground ,fg2 :background ,ms-green-bg :extend t))))
+   `(magit-diff-added-highlight               ((t (:foreground ,fg3 :background ,ms-green-bghl :extend t))))
+   `(magit-diff-removed                       ((t (:foreground ,fg2 :background ,ms-red-bg :extend t))))
+   `(magit-diff-removed-highlight             ((t (:foreground ,fg3 :background ,ms-red-bghl :extend t))))
+   `(magit-diff-base                          ((t (:foreground ,bg1 :background ,ms-orange :extend t))))
+   `(magit-diff-base-highlight                ((t (:foreground ,ms-orange :background ,bg3 :extend t))))
+   `(magit-diff-context                       ((t (:foreground ,fg0 :extend t))))
+   `(magit-diff-context-highlight             ((,class (:foreground ,fg1 :background ,bg2))))
+   `(magit-diff-file-header                   ((,class (:foreground ,fg2 :background ,bg3))))
+   `(magit-diff-file-heading                  ((t (:foreground ,fg1 :extend t))))
+   `(magit-diff-file-heading-highlight        ((t (:background ,bg3 :extend t))))
+   `(magit-diff-file-heading-selection        ((t (:foreground ,ms-orange :background ,bg3 :extend t))))
+   `(magit-diff-hunk-heading                  ((t (:foreground ,fg1 :background ,bg3 :extend t))))
+   `(magit-diff-hunk-heading-highlight        ((t (:background ,bg3 :extend t))))
+   `(magit-diff-lines-heading                 ((t (:foreground ,ms-yellow :background ,ms-red :extend t))))
    `(magit-diffstat-added                     ((t (:foreground ,ms-green))))
    `(magit-diffstat-removed                   ((t (:foreground ,ms-orange))))
    `(magit-dimmed                             ((t (:foreground ,comment))))
@@ -312,7 +307,7 @@
    `(magit-sequence-stop                      ((t (:foreground ,ms-green))))
    `(magit-signature-bad                      ((t (:inherit error))))
    `(magit-signature-error                    ((t (:inherit error))))
-   `(magit-signature-expims-red               ((t (:foreground ,ms-orange))))
+   `(magit-signature-expired-key              ((t (:foreground ,ms-orange))))
    `(magit-signature-good                     ((t (:inherit success))))
    `(magit-signature-revoked                  ((t (:foreground ,ms-magenta))))
    `(magit-signature-untrusted                ((t (:foreground ,ms-bluegreen))))
@@ -320,13 +315,13 @@
 
    `(term                                     ((,class (:foreground ,fg1 :background ,bg1))))
    `(term-color-black                         ((,class (:foreground ,bg3 :background ,bg3))))
-   `(term-color-blue                          ((,class (:foreground ,func :background ,func))))
-   `(term-color-red                           ((,class (:foreground ,keyword :background ,bg3))))
-   `(term-color-green                         ((,class (:foreground ,type :background ,bg3))))
-   `(term-color-yellow                        ((,class (:foreground ,var :background ,var))))
-   `(term-color-magenta                       ((,class (:foreground ,builtin :background ,builtin))))
-   `(term-color-cyan                          ((,class (:foreground ,str :background ,str))))
-   `(term-color-white                         ((,class (:foreground ,fg2 :background ,fg2))))
+   `(term-color-blue                          ((,class (:foreground ,ms-blue :background ,func))))
+   `(term-color-red                           ((,class (:foreground ,ms-red :background ,bg3))))
+   `(term-color-green                         ((,class (:foreground ,ms-green :background ,bg3))))
+   `(term-color-yellow                        ((,class (:foreground ,ms-yellow :background ,var))))
+   `(term-color-magenta                       ((,class (:foreground ,ms-magenta :background ,builtin))))
+   `(term-color-cyan                          ((,class (:foreground ,ms-bluegreen :background ,str))))
+   `(term-color-white                         ((,class (:foreground ,fg1 :background ,fg2))))
 
    `(diredfl-autofile-name                    ((t (:foreground ,fg0))))
    `(diredfl-compressed-file-name             ((t (:foreground ,ms-yellow))))
@@ -396,14 +391,24 @@
    `(web-mode-type-face                       ((,class (:inherit ,font-lock-type-face))))
    `(web-mode-warning-face                    ((,class (:inherit ,font-lock-warning-face))))
 
-   `(ediff-fine-diff-Ancestor                 ((t (:background "#885555"))))
-   `(ediff-fine-diff-A                        ((t (:background "#885555"))))
-   `(ediff-fine-diff-B                        ((t (:background "#558855"))))
-   `(ediff-fine-diff-C                        ((t (:background "#555588"))))
-   `(ediff-current-diff-Ancestor              ((t (:background "#663333"))))
-   `(ediff-current-diff-A                     ((t (:background "#663333"))))
-   `(ediff-current-diff-B                     ((t (:background "#336633"))))
-   `(ediff-current-diff-C                     ((t (:background "#333366"))))
+   `(diff-header                              ((t (:foreground ,ms-bluegreen :background nil))))
+   `(diff-file-header                         ((t (:foreground ,fg3 :background nil))))
+   `(diff-hunk-header                         ((t (:foreground ,fg4 :background ,bg3))))
+   `(diff-added                               ((t (:foreground ,fg2 :background ,ms-green-bg))))
+   `(diff-removed                             ((t (:foreground ,fg2 :background ,ms-red-bg))))
+   `(diff-changed                             ((t (:foreground ,fg2 :background ,ms-blue-bg))))
+   `(diff-refine-added                        ((t (:foreground ,fg3 :background ,ms-green-bghl))))
+   `(diff-refine-removed                      ((t (:foreground ,fg3 :background ,ms-red-bghl))))
+   `(diff-refine-changed                      ((t (:foreground ,fg3 :background ,ms-blue-bghl))))
+
+   `(ediff-fine-diff-Ancestor                 ((t (:background ,ms-red-bghl))))
+   `(ediff-fine-diff-A                        ((t (:background ,ms-red-bghl))))
+   `(ediff-fine-diff-B                        ((t (:background ,ms-green-bghl))))
+   `(ediff-fine-diff-C                        ((t (:background ,ms-blue-bghl))))
+   `(ediff-current-diff-Ancestor              ((t (:background ,ms-red-bg))))
+   `(ediff-current-diff-A                     ((t (:background ,ms-red-bg))))
+   `(ediff-current-diff-B                     ((t (:background ,ms-green-bg))))
+   `(ediff-current-diff-C                     ((t (:background ,ms-blue-bg))))
    `(ediff-even-diff-Ancestor                 ((t (:background ,bg3))))
    `(ediff-even-diff-A                        ((t (:background ,bg3))))
    `(ediff-even-diff-B                        ((t (:background ,bg3))))
@@ -419,7 +424,7 @@
    `(jde-java-font-lock-constant-face         ((t (:foreground ,const))))
    `(jde-java-font-lock-modifier-face         ((t (:foreground ,key3))))
    `(jde-jave-font-lock-protected-face        ((t (:foreground ,keyword))))
-   `(jde-java-font-lock-number-face           ((t (:foreground ,var))))
+   `(jde-java-font-lock-number-face           ((t (:foreground ,numeric))))
 
    `(centaur-tabs-default                     ((t (:background ,bg1 :foreground ,fg1))))
    `(centaur-tabs-selected                    ((t (:background ,bg1 :foreground ,fg3 :box nil))))
@@ -434,7 +439,6 @@
    `(solaire-minibuffer-face                  ((t (:inherit default :background ,bg2))))
    `(solaire-hl-line-face                     ((t (:inherit hl-line :background ,bg3))))
    `(solaire-org-hide-face                    ((t (:inherit org-hide :background ,bg2))))
-
 
    `(ivy-confirm-face                         ((t (:inherit minibuffer-prompt :foreground ,keyword))))
    `(ivy-current-match                        ((t (:background ,bg-hl :extend t))))
@@ -457,16 +461,16 @@
    `(swiper-match-face-4                      ((t (:inherit ivy-minibuffer-match-face-4))))
    `(swiper-line-face                         ((t (:foreground ,fg0 :background ,bg4 :extend t))))
 
-   `(git-gutter:added                         ((t (:background ,tw-g :foreground ,tw-g :weight normal))))
-   `(git-gutter:deleted                       ((t (:background ,tw-r :foreground ,tw-r :weight normal))))
-   `(git-gutter:modified                      ((t (:background ,tw-b :foreground ,tw-b :weight normal))))
-   `(git-gutter-fr:added                      ((t (:background ,tw-g :foreground ,tw-g :weight normal))))
-   `(git-gutter-fr:deleted                    ((t (:background ,tw-r :foreground ,tw-r :weight normal))))
-   `(git-gutter-fr:modified                   ((t (:background ,tw-b :foreground ,tw-b :weight normal))))
+   `(git-gutter:added                         ((t (:background ,vc-g :foreground ,vc-g :weight normal))))
+   `(git-gutter:deleted                       ((t (:background ,vc-r :foreground ,vc-r :weight normal))))
+   `(git-gutter:modified                      ((t (:background ,vc-b :foreground ,vc-b :weight normal))))
+   `(git-gutter-fr:added                      ((t (:background ,vc-g :foreground ,vc-g :weight normal))))
+   `(git-gutter-fr:deleted                    ((t (:background ,vc-r :foreground ,vc-r :weight normal))))
+   `(git-gutter-fr:modified                   ((t (:background ,vc-b :foreground ,vc-b :weight normal))))
 
-   `(diff-hl-insert                           ((t (:background ,tw-g :foreground ,tw-g))))
-   `(diff-hl-delete                           ((t (:background ,tw-r :foreground ,tw-r))))
-   `(diff-hl-change                           ((t (:background ,tw-b :foreground ,tw-b))))
+   `(diff-hl-insert                           ((t (:background ,vc-g :foreground ,vc-g))))
+   `(diff-hl-delete                           ((t (:background ,vc-r :foreground ,vc-r))))
+   `(diff-hl-change                           ((t (:background ,vc-b :foreground ,vc-b))))
 
    `(neo-dir-link-face                        ((t (:foreground "#cccccc" :family "Sans Serif"))))
    `(neo-header-face                          ((t (:foreground "#cccccc" :family "Sans Serif"))))
@@ -485,11 +489,16 @@
    `(evil-ex-substitute-replacement           ((t (:foreground ,ms-bluegreen :weight normal))))
 
    `(hl-todo                                  ((t (:inverse-video t))))
-   `(highlight-numbers-number                 ((t (:foreground ,ms-lightgreen))))
+   `(highlight-numbers-number                 ((t (:foreground ,numeric))))
    `(highlight-operators-face                 ((t (:inherit default))))
-   `(highlight-symbol-face                    ((t (:background "#343a40"))))
-   ))
+   `(highlight-symbol-face                    ((t (:background "#343a40"))))))
+
+;;;###autoload
+(when (and (boundp 'custom-theme-load-path) load-file-name)
+  (add-to-list 'custom-theme-load-path
+               (file-name-as-directory (file-name-directory load-file-name))))
 
 (provide-theme 'vscode-dark-plus)
+(provide 'vscode-dark-plus-theme)
 
 ;;; vscode-dark-plus-theme.el ends here
