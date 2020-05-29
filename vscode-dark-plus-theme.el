@@ -83,6 +83,7 @@
       (ms-magenta        "#C586C0")
       (ms-lightblue      "#9CDCFE")
       (ms-orange         "#CE9178")
+      (ms-lightorange    "#D7BA7D")
       (ms-red            "#d16969")
       (ms-green          "#6A9955")
       (ms-blue           "#569cd6")
@@ -112,6 +113,8 @@
    `(font-lock-type-face                      ((,class (:foreground ,type ))))
    `(font-lock-variable-name-face             ((,class (:foreground ,var))))
    `(font-lock-warning-face                   ((,class (:foreground ,warning :background ,bg2))))
+   `(font-lock-regexp-grouping-backslash      ((,class (:foreground ,ms-lightorange))))
+   `(font-lock-regexp-grouping-construct      ((,class (:foreground ,ms-lightorange))))
 
    `(region                                   ((,class (:background ,bg-hl))))
    `(highlight                                ((,class (:foreground ,bg3 :background ,fg3))))
