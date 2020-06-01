@@ -393,6 +393,8 @@
    `(web-mode-string-face                     ((,class (:foreground ,str))))
    `(web-mode-type-face                       ((,class (:inherit ,font-lock-type-face))))
    `(web-mode-warning-face                    ((,class (:inherit ,font-lock-warning-face))))
+   `(web-mode-json-key-face                   ((,class (:foreground ,str))))
+   `(web-mode-json-context-face               ((,class (:foreground ,str))))
 
    `(diff-header                              ((t (:foreground ,ms-bluegreen :background nil))))
    `(diff-file-header                         ((t (:foreground ,fg3 :background nil))))
