@@ -18,6 +18,12 @@
 
 <br/>
 
+#### Introduction:
+
+This theme aims to be **as identical as possible** to the default Dark+ color scheme used by Visual Studio Code. To see the original Visual Studio Code by Microsoft in action, consider [this YouTube video](https://www.youtube.com/watch?v=fnPhJHN0jTE).
+
+If you find an inconsistency between Visual Studio Code's Dark+ and my port, please **file an issue** and I'll try my best to fix it.
+
 #### Note:
 
 This is the default Visual Studio Code Dark+ theme (the more **colorful** one), if you're looking for the **more minimal Dark** theme, it's [here](https://github.com/ianpan870102/vscode-dark-emacs-theme).
