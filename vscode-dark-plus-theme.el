@@ -383,6 +383,7 @@
    `(web-mode-html-tag-face                   ((,class (:foreground ,keyword))))
    `(web-mode-html-attr-name-face             ((,class (:foreground ,var))))
    `(web-mode-html-attr-value-face            ((,class (:foreground ,str))))
+   `(web-mode-html-attr-equal-face            ((,class (:foreground ,fg1))))
    `(web-mode-builtin-face                    ((,class (:inherit ,font-lock-builtin-face))))
    `(web-mode-comment-face                    ((,class (:inherit ,font-lock-comment-face))))
    `(web-mode-constant-face                   ((,class (:inherit ,font-lock-constant-face))))
