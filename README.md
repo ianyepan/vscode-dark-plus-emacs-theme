@@ -28,13 +28,20 @@ If you find an inconsistency between Visual Studio Code's Dark+ and my port, ple
 
 This is the default Visual Studio Code Dark+ theme (the more **colorful** one), if you're looking for the **more minimal Dark** theme, it's [here](https://github.com/ianpan870102/vscode-dark-emacs-theme).
 
+### Installation
 
-### Installation Method 1: MELPA
+#### Installation Method 1: MELPA (Recommended)
 
-WIP. My package is currently waiting for MELPA maintainers' review.
+`vscode-dark-plus-theme` is now on MELPA as a package (as of 8. June. 2020)! An example use-package declaration:
+
+```emacs-lisp
+(use-package vscode-dark-plus-theme
+  :config
+  (load-theme 'vscode-dark-plus t))
+```
 
 
-### Installation Method 2: manual install
+#### Installation Method 2: manual install
 
 Download `vscode-dark-plus-theme.el` and put it under `~/.emacs.d/themes/` (or `~/.config/emacs/themes/`), then add these lines to your `init.el`:
 
