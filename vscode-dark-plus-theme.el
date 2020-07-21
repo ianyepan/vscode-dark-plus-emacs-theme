@@ -69,7 +69,8 @@
       (keyword           "#569cd6")
       (const             "#4ec9b0")
       (comment           "#6a9955")
-      (doc               "#888888")
+      (doc               "#ce9178")
+      (doc-alt           "#888888")
       (func              "#dcdcaa")
       (str               "#ce9178")
       (type              "#4ec9b0")
@@ -147,7 +148,7 @@
    `(company-tooltip                          ((t (:inherit default :background ,bg2))))
    `(company-tooltip-common                   ((t (:foreground ,ms-blue :bold t))))
    `(company-tooltip-selection                ((t (:background ,bg-hl))))
-   `(company-tooltip-annotation               ((t (:foreground ,doc)))) ; parameter hints etc.
+   `(company-tooltip-annotation               ((t (:foreground ,doc-alt)))) ; parameter hints etc.
 
    `(org-document-title                       ((,class (:foreground ,type :height 1.2 :bold t))))
    `(org-level-1                              ((,class (:bold nil :foreground ,ms-bluegreen :height 1.1))))
@@ -327,7 +328,7 @@
 
    `(diredfl-autofile-name                    ((t (:foreground ,fg0))))
    `(diredfl-compressed-file-name             ((t (:foreground ,ms-yellow))))
-   `(diredfl-compressed-file-suffix           ((t (:foreground ,doc))))
+   `(diredfl-compressed-file-suffix           ((t (:foreground ,doc-alt))))
    `(diredfl-date-time                        ((t (:foreground ,ms-bluegreen))))
    `(diredfl-deletion                         ((t (:foreground ,ms-red :bold t))))
    `(diredfl-deletion-file-name               ((t (:foreground ,ms-red ))))
@@ -337,9 +338,9 @@
    `(diredfl-exec-priv                        ((t (:foreground ,ms-green))))
    `(diredfl-executable-tag                   ((t (:foreground ,ms-green))))
    `(diredfl-file-name                        ((t (:foreground ,fg1))))
-   `(diredfl-file-suffix                      ((t (:foreground ,doc))))
+   `(diredfl-file-suffix                      ((t (:foreground ,doc-alt))))
    `(diredfl-flag-mark                        ((t (:foreground ,ms-yellow :bold t))))
-   `(diredfl-ignored-file-name                ((t (:foreground ,doc))))
+   `(diredfl-ignored-file-name                ((t (:foreground ,doc-alt))))
    `(diredfl-link-priv                        ((t (:foreground ,ms-magenta))))
    `(diredfl-no-priv                          ((t (:foreground ,fg1))))
    `(diredfl-number                           ((t (:foreground ,ms-orange))))
@@ -455,7 +456,7 @@
    `(ivy-minibuffer-match-face-4              ((t (:inherit ivy-minibuffer-match-face-2))))
    `(ivy-minibuffer-match-highlight           ((t (:inherit ivy-current-match))))
    `(ivy-modified-buffer                      ((t (:inherit default :foreground ,var))))
-   `(ivy-virtual                              ((t (:inherit default :foreground ,doc))))
+   `(ivy-virtual                              ((t (:inherit default :foreground ,doc-alt))))
    `(ivy-posframe                             ((t (:background "#252526"))))
 
    `(counsel-key-binding                      ((t (:foreground ,var))))
