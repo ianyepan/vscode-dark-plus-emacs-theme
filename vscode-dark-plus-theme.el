@@ -116,7 +116,7 @@
    `(font-lock-regexp-grouping-backslash      ((,class (:foreground ,ms-lightorange))))
    `(font-lock-regexp-grouping-construct      ((,class (:foreground ,ms-lightorange))))
 
-   `(region                                   ((,class (:background ,bg-hl))))
+   `(region                                   ((,class (:background ,bg-hl :extend nil))))
    `(highlight                                ((,class (:foreground ,bg3 :background ,fg3))))
    `(hl-line                                  ((,class (:background ,bg3))))
    `(fringe                                   ((,class (:background ,bg1 :foreground ,fg4))))
