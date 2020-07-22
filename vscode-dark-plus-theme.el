@@ -117,7 +117,7 @@
    `(font-lock-regexp-grouping-construct      ((,class (:foreground ,ms-lightorange))))
 
    `(region                                   ((,class (:background ,bg-hl :extend nil))))
-   `(highlight                                ((,class (:foreground ,bg3 :background ,fg3))))
+   `(highlight                                ((,class (:foreground ,fg3 :background ,bg3))))
    `(hl-line                                  ((,class (:background ,bg3))))
    `(fringe                                   ((,class (:background ,bg1 :foreground ,fg4))))
    `(cursor                                   ((,class (:background ,fg1))))
