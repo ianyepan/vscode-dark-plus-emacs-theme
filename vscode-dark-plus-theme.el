@@ -178,6 +178,7 @@
    `(org-verbatim                             ((,class (:foreground ,fg4))))
    `(org-document-info-keyword                ((,class (:foreground ,ms-green))))
    `(org-sexp-date                            ((,class (:foreground ,fg4))))
+   `(org-table                                ((,class (:foreground ,fg2 :background ,bg3))))
 
    `(font-latex-bold-face                     ((,class (:foreground ,type))))
    `(font-latex-italic-face                   ((,class (:foreground ,key3 :italic t))))
