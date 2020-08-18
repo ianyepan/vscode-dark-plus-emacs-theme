@@ -128,7 +128,7 @@
    `(vertical-border                          ((,class (:foreground ,bg3))))
    `(minibuffer-prompt                        ((,class (:foreground ,ms-bluegreen :weight normal))))
    `(default-italic                           ((,class (:italic t))))
-   `(link                                     ((,class (:foreground ,const :underline t))))
+   `(link                                     ((,class (:foreground ,ms-blue :underline t))))
    `(error                                    ((,class (:foreground ,ms-orange))))
    `(warning                                  ((,class (:foreground ,ms-magenta))))
    `(success                                  ((,class (:foreground ,ms-bluegreen))))
@@ -492,7 +492,7 @@
    `(sml/prefix                               ((t (:foreground ,fg1 :weight normal))))
    `(sml/read-only                            ((t (:foreground ,fg1 :weight normal))))
    `(sml/modes                                ((t (:foreground ,fg1 :weight normal))))
-   `(sml/modified                             ((t (:foreground ,ms-red :weight normal))))
+   `(sml/modified                             ((t (:foreground ,ms-lightred :weight normal))))
    `(sml/charging                             ((t (:foreground ,ms-green :weight normal))))
 
    `(evil-ex-substitute-matches               ((t (:foreground ,warning :weight normal :strike-through t))))
