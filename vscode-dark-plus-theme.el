@@ -491,7 +491,7 @@
    `(sml/prefix                               ((t (:foreground ,fg1 :weight normal))))
    `(sml/read-only                            ((t (:foreground ,fg1 :weight normal))))
    `(sml/modes                                ((t (:foreground ,fg1 :weight normal))))
-   `(sml/modified                             ((t (:foreground ,ms-lightred :weight normal))))
+   `(sml/modified                             ((t (:foreground ,accent :weight bold))))
    `(sml/charging                             ((t (:foreground ,ms-green :weight normal))))
 
    `(evil-ex-substitute-matches               ((t (:foreground ,warning :weight normal :strike-through t))))
