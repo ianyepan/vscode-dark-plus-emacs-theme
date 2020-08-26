@@ -81,7 +81,6 @@
       (ms-yellow         "#dcdcaa")
       (ms-bluegreen      "#4ec9b0")
       (ms-magenta        "#c586c0")
-      (ms-lightblue      "#9cdcfe")
       (ms-orange         "#ce9178")
       (ms-lightorange    "#d7ba7d")
       (ms-red            "#d16969")
@@ -89,13 +88,13 @@
       (ms-blue           "#569cd6")
       (ms-lightred       "#f19999")
       (ms-lightgreen     "#b5cea8")
-      ;; (ms-lightblue      "#9cdcfe")
+      (ms-lightblue      "#9cdcfe")
       (ms-red-bg         "#551b1e")
-      (ms-blue-bg        "#040e3f")
       (ms-green-bg       "#39422a")
+      (ms-blue-bg        "#040e3f")
       (ms-red-bghl       "#74140f")
-      (ms-blue-bghl      "#141e4f")
-      (ms-green-bghl     "#4b5332"))
+      (ms-green-bghl     "#4b5332")
+      (ms-blue-bghl      "#141e4f"))
 
   (custom-theme-set-faces
    'vscode-dark-plus
