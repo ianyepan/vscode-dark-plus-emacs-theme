@@ -485,12 +485,12 @@
    `(neo-file-link-face                       ((t (:foreground "#aaaaaa" :family "Sans Serif"))))
    `(neo-expand-btn-face                      ((t (:foreground "#aaaaaa"))))
 
-   `(sml/global                               ((t (:foreground ,fg1 :weight normal))))
-   `(sml/filename                             ((t (:foreground ,fg1 :weight normal))))
-   `(sml/line-number                          ((t (:foreground ,fg1 :weight normal))))
-   `(sml/prefix                               ((t (:foreground ,fg1 :weight normal))))
-   `(sml/read-only                            ((t (:foreground ,fg1 :weight normal))))
-   `(sml/modes                                ((t (:foreground ,fg1 :weight normal))))
+   `(sml/global                               ((t (:foreground ,fg2 :weight normal))))
+   `(sml/filename                             ((t (:foreground ,fg2 :weight normal))))
+   `(sml/line-number                          ((t (:foreground ,fg2 :weight normal))))
+   `(sml/prefix                               ((t (:foreground ,fg2 :weight normal))))
+   `(sml/read-only                            ((t (:foreground ,fg2 :weight normal))))
+   `(sml/modes                                ((t (:foreground ,fg2 :weight normal))))
    `(sml/modified                             ((t (:foreground ,accent :weight bold))))
    `(sml/charging                             ((t (:foreground ,ms-green :weight normal))))
 
