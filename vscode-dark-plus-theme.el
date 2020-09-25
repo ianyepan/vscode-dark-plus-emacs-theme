@@ -149,6 +149,7 @@
    `(company-tooltip-common                   ((t (:foreground ,ms-blue :bold t))))
    `(company-tooltip-selection                ((t (:background ,bg-hl))))
    `(company-tooltip-annotation               ((t (:foreground ,doc-alt)))) ; parameter hints etc.
+   `(company-template-field                   ((t (:inherit region))))
 
    `(org-document-title                       ((,class (:foreground ,type :height 1.2 :bold t))))
    `(org-level-1                              ((,class (:bold nil :foreground ,ms-bluegreen :height 1.1))))
