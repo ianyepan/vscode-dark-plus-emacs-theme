@@ -320,6 +320,8 @@
    `(magit-signature-untrusted                ((t (:foreground ,ms-bluegreen))))
    `(magit-tag                                ((t (:foreground ,ms-yellow))))
 
+   `(git-commit-summary                       ((t (:inherit default)))) ; magit commit message face
+
    `(term                                     ((,class (:foreground ,fg1 :background ,bg1))))
    `(term-color-black                         ((,class (:foreground ,bg3 :background ,bg3))))
    `(term-color-blue                          ((,class (:foreground ,ms-blue :background ,func))))
