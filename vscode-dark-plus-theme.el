@@ -152,7 +152,6 @@
    `(company-tooltip-annotation               ((t (:foreground ,doc-alt)))) ; parameter hints etc.
    `(company-template-field                   ((t (:inherit region))))
 
-   `(org-document-title                       ((,class (:foreground ,type :height 1.2 :bold t))))
    `(org-level-1                              ((,class (:bold nil :foreground ,ms-bluegreen :height 1.1))))
    `(org-level-2                              ((,class (:bold nil :foreground ,ms-lightblue))))
    `(org-level-3                              ((,class (:bold nil :foreground ,ms-blue))))
@@ -178,7 +177,9 @@
    `(org-scheduled-today                      ((,class (:foreground ,func :weight normal :height 1.2))))
    `(org-ellipsis                             ((,class (:foreground ,builtin))))
    `(org-verbatim                             ((,class (:foreground ,fg4))))
-   `(org-document-info-keyword                ((,class (:foreground ,ms-green))))
+   `(org-document-title                       ((,class (:foreground ,type :height 1.2 :bold t)))) ; title
+   `(org-document-info                        ((,class (:foreground ,ms-yellow)))) ; author, date etc.
+   `(org-document-info-keyword                ((,class (:foreground ,ms-green))))  ; "#+Title", "#+Date" etc.
    `(org-sexp-date                            ((,class (:foreground ,fg4))))
    `(org-table                                ((,class (:foreground ,fg2 :background ,bg3))))
 
