@@ -116,6 +116,7 @@
    `(font-lock-regexp-grouping-construct      ((,class (:foreground ,ms-lightorange))))
 
    `(region                                   ((,class (:background ,bg-hl :extend nil))))
+   `(secondary-selection                      ((,class (:inherit region))))
    `(highlight                                ((,class (:foreground ,fg3 :background ,bg3))))
    `(hl-line                                  ((,class (:background ,bg3))))
    `(fringe                                   ((,class (:background ,bg1 :foreground ,fg4))))
