@@ -117,7 +117,7 @@
 
    `(region                                   ((,class (:background ,bg-hl :extend nil))))
    `(secondary-selection                      ((,class (:inherit region))))
-   `(highlight                                ((,class (:foreground ,fg3 :background ,bg3))))
+   `(highlight                                ((,class (:foreground "#4db2ff" :underline t)))) ; link hover
    `(hl-line                                  ((,class (:background ,bg3))))
    `(fringe                                   ((,class (:background ,bg1 :foreground ,fg4))))
    `(cursor                                   ((,class (:background ,fg1))))
@@ -128,7 +128,7 @@
    `(vertical-border                          ((,class (:foreground ,bg3))))
    `(minibuffer-prompt                        ((,class (:foreground ,ms-bluegreen :weight normal))))
    `(default-italic                           ((,class (:italic t))))
-   `(link                                     ((,class (:foreground ,ms-blue :underline t))))
+   `(link                                     ((,class (:foreground "#3794ff"))))
    `(error                                    ((,class (:foreground ,ms-orange))))
    `(warning                                  ((,class (:foreground ,ms-magenta))))
    `(success                                  ((,class (:foreground ,ms-bluegreen))))
