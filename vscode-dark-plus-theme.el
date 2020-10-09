@@ -115,7 +115,7 @@
    `(font-lock-regexp-grouping-backslash      ((,class (:foreground ,ms-lightorange))))
    `(font-lock-regexp-grouping-construct      ((,class (:foreground ,ms-lightorange))))
 
-   `(region                                   ((,class (:background ,bg-hl :extend nil))))
+   `(region                                   ((,class (:background ,bg-hl :distant-foreground ,fg0 :extend nil))))
    `(secondary-selection                      ((,class (:inherit region))))
    `(highlight                                ((,class (:foreground "#4db2ff" :underline t)))) ; link hover
    `(hl-line                                  ((,class (:background ,bg3))))
