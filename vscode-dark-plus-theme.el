@@ -506,7 +506,11 @@
    `(hl-todo                                  ((t (:inverse-video t))))
    `(highlight-numbers-number                 ((t (:foreground ,numeric))))
    `(highlight-operators-face                 ((t (:inherit default))))
-   `(highlight-symbol-face                    ((t (:background "#343a40"))))))
+   `(highlight-symbol-face                    ((t (:background "#343a40"))))
+
+   `(tab-bar-tab-inactive                     ((t (:background ,bg2))))
+   `(tab-bar-tab                              ((t (:background ,bg1 :foreground ,accent))))
+   `(tab-bar                                  ((t (:background ,bg2))))))
 
 ;;;###autoload
 (when (and (boundp 'custom-theme-load-path) load-file-name)
