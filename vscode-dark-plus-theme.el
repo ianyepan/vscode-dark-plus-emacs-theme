@@ -508,6 +508,10 @@
    `(highlight-operators-face                 ((t (:inherit default))))
    `(highlight-symbol-face                    ((t (:background "#343a40"))))
 
+   `(window-divider                           ((t (:foreground "gray40"))))
+   `(window-divider-last-pixel                ((t (:foreground "gray20"))))
+   `(window-divider-first-pixel               ((t (:foreground "gray60"))))
+
    `(tab-bar-tab-inactive                     ((t (:background ,bg2))))
    `(tab-bar-tab                              ((t (:background ,bg1 :foreground ,accent))))
    `(tab-bar                                  ((t (:background ,bg2))))))
