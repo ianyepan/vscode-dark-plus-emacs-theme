@@ -53,6 +53,19 @@ Download `vscode-dark-plus-theme.el` and put it under `~/.emacs.d/themes/` (or `
 (load-theme 'vscode-dark-plus t)
 ```
 
+### Options
+You can set a few options to customize some of the faces.
+```emacs-lisp
+;; Remove the border around the TODO word on org-mode files
+(setq vscode-dark-plus-box-org-todo nil)
+
+;; Do not set different heights for some org faces
+(setq vscode-dark-plus-scale-org-faces nil)
+
+;; Avoid inverting hl-todo face
+(setq vscode-dark-plus-invert-hl-todo nil)
+```
+
 #### Screenshots of various modes
 
 <!-- ![alt text](./screenshots/solaire.png) -->
