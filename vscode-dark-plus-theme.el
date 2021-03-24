@@ -43,6 +43,22 @@
 ;;; Code:
 
 (deftheme vscode-dark-plus)
+
+(defcustom vscode-dark-plus-box-org-todo t
+  "Set box around TODO items in org-mode"
+  :type 'boolean
+  :group 'dark-plus)
+
+(defcustom vscode-dark-plus-scale-org-faces t
+  "Scale headlines and other org faces"
+  :type 'boolean
+  :group 'dark-plus)
+
+(defcustom vscode-dark-plus-invert-hl-todo t
+  "Set (:invert-video t) on hl-todo face"
+  :type 'boolean
+  :group 'dark-plus)
+
 (let ((class '((class color) (min-colors 89)))
       (fg0               "#aeafad")
       (fg1               "#d4d4d4") ; default fg
@@ -152,7 +168,8 @@
    `(company-tooltip-annotation               ((t (:foreground ,doc-alt)))) ; parameter hints etc.
    `(company-template-field                   ((t (:inherit region))))
 
-   `(org-level-1                              ((,class (:bold nil :foreground ,ms-bluegreen :height 1.1))))
+   `(org-level-1                              ((,class (:bold nil :foreground ,ms-bluegreen
+                                                              ,@(when vscode-dark-plus-scale-org-faces (list :height 1.1))))))
    `(org-level-2                              ((,class (:bold nil :foreground ,ms-lightblue))))
    `(org-level-3                              ((,class (:bold nil :foreground ,ms-blue))))
    `(org-level-4                              ((,class (:bold nil :foreground ,ms-bluegreen))))
@@ -165,19 +182,23 @@
    `(org-block                                ((,class (:foreground ,fg2 :background ,bg0 :extend t))))
    `(org-quote                                ((,class (:inherit org-block :slant italic))))
    `(org-verse                                ((,class (:inherit org-block :slant italic))))
-   `(org-todo                                 ((,class (:box (:line-width 1 :color ,ms-lightred) :foreground ,ms-lightred :bold nil))))
+   `(org-todo                                 ((,class (,@(when vscode-dark-plus-box-org-todo (list :box '(:line-width 1 :color ,ms-lightred)))
+                                                             :foreground ,ms-lightred :bold nil))))
    `(org-done                                 ((,class (:box (:line-width 1 :color ,ms-lightgreen) :foreground ,ms-lightgreen :bold nil ))))
    `(org-warning                              ((,class (:underline t :foreground ,warning))))
    `(org-agenda-structure                     ((,class (:weight normal :foreground ,fg3 :box (:color ,fg4) :background ,bg3))))
-   `(org-agenda-date                          ((,class (:foreground ,var :height 1.1 ))))
+   `(org-agenda-date                          ((,class (:foreground ,var ,@(when vscode-dark-plus-scale-org-faces (list :height 1.1))))))
    `(org-agenda-date-weekend                  ((,class (:weight normal :foreground ,fg4))))
-   `(org-agenda-date-today                    ((,class (:weight normal :foreground ,keyword :height 1.2))))
+   `(org-agenda-date-today                    ((,class (:weight normal :foreground ,keyword
+                                                                ,@(when vscode-dark-plus-scale-org-faces (list :height 1.2))))))
    `(org-agenda-done                          ((,class (:foreground ,bg4))))
    `(org-scheduled                            ((,class (:foreground ,type))))
-   `(org-scheduled-today                      ((,class (:foreground ,func :weight normal :height 1.2))))
+   `(org-scheduled-today                      ((,class (:foreground ,func :weight normal
+                                                                    ,@(when vscode-dark-plus-scale-org-faces (list :height 1.2))))))
    `(org-ellipsis                             ((,class (:foreground ,builtin))))
    `(org-verbatim                             ((,class (:foreground ,fg4))))
-   `(org-document-title                       ((,class (:foreground ,type :height 1.2 :bold t)))) ; title
+   `(org-document-title                       ((,class (:foreground ,type :bold t
+                                                                    ,@(when vscode-dark-plus-scale-org-faces (list :height 1.2)))))) ; title
    `(org-document-info                        ((,class (:foreground ,ms-yellow)))) ; author, date etc.
    `(org-document-info-keyword                ((,class (:foreground ,ms-green))))  ; "#+Title", "#+Date" etc.
    `(org-sexp-date                            ((,class (:foreground ,fg4))))
@@ -503,7 +524,7 @@
    `(evil-ex-substitute-matches               ((t (:foreground ,warning :weight normal :strike-through t))))
    `(evil-ex-substitute-replacement           ((t (:foreground ,ms-bluegreen :weight normal))))
 
-   `(hl-todo                                  ((t (:inverse-video t))))
+   `(hl-todo                                  ((t ,@(when vscode-dark-plus-invert-hl-todo (list :inverse-video t)))))
    `(highlight-numbers-number                 ((t (:foreground ,numeric))))
    `(highlight-operators-face                 ((t (:inherit default))))
    `(highlight-symbol-face                    ((t (:background "#343a40"))))
