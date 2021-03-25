@@ -484,11 +484,11 @@
    `(diff-hl-delete                           ((t (:background ,vc-r :foreground ,vc-r))))
    `(diff-hl-change                           ((t (:background ,vc-b :foreground ,vc-b))))
 
-   `(neo-dir-link-face                        ((t (:foreground "#cccccc" :family "Sans Serif"))))
-   `(neo-header-face                          ((t (:foreground "#cccccc" :family "Sans Serif"))))
-   `(neo-banner-face                          ((t (:foreground "#cccccc" :family "Sans Serif"))))
-   `(neo-root-dir-face                        ((t (:foreground "#cccccc" :family "Sans Serif"))))
-   `(neo-file-link-face                       ((t (:foreground "#aaaaaa" :family "Sans Serif"))))
+   `(neo-dir-link-face                        ((t (:foreground "#cccccc"))))
+   `(neo-header-face                          ((t (:foreground "#cccccc"))))
+   `(neo-banner-face                          ((t (:foreground "#cccccc"))))
+   `(neo-root-dir-face                        ((t (:foreground "#cccccc"))))
+   `(neo-file-link-face                       ((t (:foreground "#aaaaaa"))))
    `(neo-expand-btn-face                      ((t (:foreground "#aaaaaa"))))
 
    `(sml/global                               ((t (:foreground ,fg2 :weight normal))))
