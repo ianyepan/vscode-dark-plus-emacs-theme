@@ -533,6 +533,12 @@
    `(window-divider-last-pixel                ((t (:foreground "gray20"))))
    `(window-divider-first-pixel               ((t (:foreground "gray60"))))
 
+   `(tree-sitter-hl-face:method.call          ((t (:inherit font-lock-function-name-face))))
+   `(tree-sitter-hl-face:function.call        ((t (:inherit font-lock-function-name-face))))
+   `(tree-sitter-hl-face:operator             ((t (:inherit default))))
+   `(tree-sitter-hl-face:type.builtin         ((t (:inherit font-lock-keyword-face))))
+   `(tree-sitter-hl-face:number               ((t (:inherit highlight-numbers-number))))
+
    `(tab-bar-tab-inactive                     ((t (:background ,bg2))))
    `(tab-bar-tab                              ((t (:background ,bg1 :foreground ,accent))))
    `(tab-bar                                  ((t (:background ,bg2))))))
