@@ -539,9 +539,10 @@
    `(tree-sitter-hl-face:type.builtin         ((t (:inherit font-lock-keyword-face))))
    `(tree-sitter-hl-face:number               ((t (:inherit highlight-numbers-number))))
 
-   `(tab-bar-tab-inactive                     ((t (:background ,bg2))))
+   `(tab-bar-tab-inactive                     ((t (:background "#2D2D2D" :foreground ,fg0))))
    `(tab-bar-tab                              ((t (:background ,bg1 :foreground ,accent))))
-   `(tab-bar                                  ((t (:background ,bg2))))))
+   `(tab-line                                 ((t (:background ,bg2))))
+   `(tab-bar                                  ((t (:background ,bg1))))))
 
 ;;;###autoload
 (when (and (boundp 'custom-theme-load-path) load-file-name)
