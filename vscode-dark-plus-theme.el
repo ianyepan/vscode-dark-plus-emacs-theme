@@ -149,7 +149,7 @@
    `(warning                                  ((,class (:foreground ,ms-magenta))))
    `(success                                  ((,class (:foreground ,ms-bluegreen))))
    `(dired-directory                          ((t (:inherit (font-lock-keyword-face)))))
-   `(line-number                              ((,class (:foreground ,line-num :background nil))))
+   `(line-number                              ((,class (:foreground ,line-num :background ,bg1))))
    `(line-number-current-line                 ((,class (:foreground ,fg1 :background nil))))
    `(header-line                              ((,class (:inherit nil :foreground ,accent :background ,bg4 :box (:line-width -1)))))
 
