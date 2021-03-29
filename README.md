@@ -18,6 +18,10 @@
 
 <br/>
 
+![alt text](./screenshots/cpp.png)
+
+<br/>
+
 #### Introduction:
 
 This theme aims to be **as identical as possible** to the default Dark+ color scheme used by Visual Studio Code. To see the original Visual Studio Code by Microsoft in action, consider [this YouTube video](https://www.youtube.com/watch?v=fnPhJHN0jTE).
@@ -90,21 +94,18 @@ The following snippet turns on solaire-mode support.
   (load-theme 'vscode-dark-plus t))
 ```
 
-#### Screenshots of various modes
+#### More Screenshots
 
-<!-- ![alt text](./screenshots/solaire.png) -->
 
-<!-- ![alt text](./screenshots/posframe.png) -->
+![alt text](./screenshots/react.png)
 
-![alt text](./screenshots/jsx1.png)
+<br/>
 
-![alt text](./screenshots/diff.png)
+![alt text](./screenshots/flappy.png)
 
-![alt text](./screenshots/cpp.png)
+<br/>
 
-![alt text](./screenshots/html.png)
-
-![alt text](./screenshots/jsx2.png)
+![alt text](./screenshots/magit.png)
 
 
 Copyright© 2020 Ian Y.E. Pan
