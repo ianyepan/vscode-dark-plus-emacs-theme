@@ -36,6 +36,7 @@ This is the default Visual Studio Code Dark+ theme (the more **colorful** one), 
 
 ```emacs-lisp
 (use-package vscode-dark-plus-theme
+  :ensure t
   :config
   (load-theme 'vscode-dark-plus t))
 ```
@@ -64,6 +65,29 @@ You can set a few options to customize some of the faces.
 
 ;; Avoid inverting hl-todo face
 (setq vscode-dark-plus-invert-hl-todo nil)
+```
+
+### Support for Solaire-Mode
+
+The following snippet turns on solaire-mode support.
+
+```emacs-lisp
+(use-package solaire-mode
+  :ensure t
+  :hook ((change-major-mode . turn-on-solaire-mode)
+         (after-revert . turn-on-solaire-mode)
+         (ediff-prepare-buffer . solaire-mode)
+         (minibuffer-setup . solaire-mode-in-minibuffer))
+  :config
+  (add-to-list 'solaire-mode-themes-to-face-swap '"vscode-dark-plus")
+  (setq solaire-mode-auto-swap-bg t)
+  (solaire-global-mode +1))
+
+(use-package vscode-dark-plus-theme
+  :ensure t
+  :after solaire-mode
+  :config
+  (load-theme 'vscode-dark-plus t))
 ```
 
 #### Screenshots of various modes
