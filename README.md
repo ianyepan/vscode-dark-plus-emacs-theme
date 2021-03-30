@@ -24,13 +24,13 @@
 
 #### Introduction:
 
-This theme aims to be **as identical as possible** to the default Dark+ color scheme used by Visual Studio Code. To see the original Visual Studio Code by Microsoft in action, consider [this YouTube video](https://www.youtube.com/watch?v=fnPhJHN0jTE).
+This theme aims to be **as identical as possible** to the default
+Dark+ color scheme used by Visual Studio Code. To see the original
+Visual Studio Code by Microsoft in action, consider [this YouTube
+video](https://www.youtube.com/watch?v=fnPhJHN0jTE).
 
-If you find an inconsistency between Visual Studio Code's Dark+ and my port, please **file an issue** and I'll try my best to fix it.
-
-#### Note:
-
-This is the default Visual Studio Code Dark+ theme (the more **colorful** one), if you're looking for the **more minimal Dark** theme, it's [here](https://github.com/ianpan870102/vscode-dark-emacs-theme).
+If you find any inconsistency between Visual Studio Code's Dark+ and
+my port, please **file an issue** and I'll try my best to fix it.
 
 ### Installation
 
@@ -48,7 +48,9 @@ This is the default Visual Studio Code Dark+ theme (the more **colorful** one), 
 
 #### Installation Method 2: manual install
 
-Download `vscode-dark-plus-theme.el` and put it under `~/.emacs.d/themes/` (or `~/.config/emacs/themes/`), then add these lines to your `init.el`:
+Download `vscode-dark-plus-theme.el` and put it under
+`~/.emacs.d/themes/` (or `~/.config/emacs/themes/`), then add these
+lines to your `init.el`:
 
 ```emacs-lisp
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
@@ -59,7 +61,9 @@ Download `vscode-dark-plus-theme.el` and put it under `~/.emacs.d/themes/` (or `
 ```
 
 ### Options
+
 You can set a few options to customize some of the faces.
+
 ```emacs-lisp
 ;; Remove the border around the TODO word on org-mode files
 (setq vscode-dark-plus-box-org-todo nil)
@@ -110,8 +114,15 @@ The following snippet turns on solaire-mode support.
 
 Copyright© 2020 Ian Y.E. Pan
 
-This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or (at
+your option) any later version.
 
-This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+This program is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+General Public License for more details.
 
-You should have received a copy of the GNU General Public License along with this program. If not, see https://www.gnu.org/licenses/.
+You should have received a copy of the GNU General Public License
+along with this program. If not, see https://www.gnu.org/licenses/.
