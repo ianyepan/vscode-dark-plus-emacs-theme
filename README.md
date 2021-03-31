@@ -111,8 +111,11 @@ The following snippet turns on solaire-mode support.
 
 ![alt text](./screenshots/magit.png)
 
+<br/>
+<br/>
 
-Copyright© 2020 Ian Y.E. Pan
+
+Copyright© 2020-2021 Ian Y.E. Pan
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
