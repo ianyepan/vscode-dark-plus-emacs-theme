@@ -537,6 +537,7 @@
    `(tree-sitter-hl-face:operator             ((t (:inherit default))))
    `(tree-sitter-hl-face:type.builtin         ((t (:inherit font-lock-keyword-face))))
    `(tree-sitter-hl-face:number               ((t (:inherit highlight-numbers-number))))
+   `(tree-sitter-hl-face:variable.special     ((t (:inherit font-lock-keyword-face))))
 
    `(font-latex-bold-face                     ((t (:inherit bold))))
    `(font-latex-italic-face                   ((t (:inherit italic))))
