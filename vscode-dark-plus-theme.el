@@ -539,6 +539,8 @@
    `(tree-sitter-hl-face:number               ((t (:inherit highlight-numbers-number))))
    `(tree-sitter-hl-face:variable.special     ((t (:inherit font-lock-keyword-face))))
 
+   `(lsp-ui-doc-background                    ((t (:background ,bg2))))
+
    `(font-latex-bold-face                     ((t (:inherit bold))))
    `(font-latex-italic-face                   ((t (:inherit italic))))
    `(font-latex-math-face                     ((t (:foreground ,ms-blue))))
