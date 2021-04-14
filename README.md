@@ -22,7 +22,7 @@
 
 <br/>
 
-#### Introduction:
+### Introduction:
 
 This theme aims to be **as identical as possible** to the default
 Dark+ color scheme used by Visual Studio Code. To see the original
@@ -98,7 +98,7 @@ The following snippet turns on solaire-mode support.
   (load-theme 'vscode-dark-plus t))
 ```
 
-#### More Screenshots
+### More Screenshots
 
 
 ![alt text](./screenshots/react.png)
