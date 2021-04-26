@@ -508,8 +508,8 @@
    `(neo-header-face                          ((t (:foreground "#cccccc"))))
    `(neo-banner-face                          ((t (:foreground "#cccccc"))))
    `(neo-root-dir-face                        ((t (:foreground "#cccccc"))))
-   `(neo-file-link-face                       ((t (:foreground "#aaaaaa"))))
-   `(neo-expand-btn-face                      ((t (:foreground "#aaaaaa"))))
+   `(neo-file-link-face                       ((t (:foreground "#cccccc"))))
+   `(neo-expand-btn-face                      ((t (:foreground "#cccccc"))))
 
    `(sml/global                               ((t (:foreground ,fg2 :weight normal))))
    `(sml/filename                             ((t (:foreground ,fg2 :weight normal))))
