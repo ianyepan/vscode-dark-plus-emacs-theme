@@ -1,4 +1,4 @@
-<h3 align="center">Visual Studio Code Dark+ for Emacs</h3>
+<h3 align="center">🖥 Visual Studio Code Dark+ for Emacs 🖥</h3>
 <hr/>
 
 
@@ -24,7 +24,7 @@
 
 <br/>
 
-<p align="center">A complete port of the default Visual Studio Code Dark+ theme for Emacs</p>
+<p align="center">✔ A complete port of the default Visual Studio Code Dark+ theme for Emacs</p>
 
 <br/>
 
@@ -38,7 +38,7 @@
 
 <br/>
 
-### Introduction:
+### Introduction 👋
 
 This theme aims to be **as identical as possible** to the default
 Dark+ color scheme used by Visual Studio Code. To see the original
@@ -48,7 +48,7 @@ video](https://www.youtube.com/watch?v=fnPhJHN0jTE).
 If you find any inconsistency between Visual Studio Code's Dark+ and
 my port, please **file an issue** and I'll try my best to fix it.
 
-### Installation
+### Installation 🤘
 
 #### Installation Method 1: MELPA (Recommended)
 
@@ -76,7 +76,7 @@ lines to your `init.el`:
 (load-theme 'vscode-dark-plus t)
 ```
 
-### Options
+### Options 🧐
 
 You can set a few options to customize some of the faces.
 
@@ -91,7 +91,7 @@ You can set a few options to customize some of the faces.
 (setq vscode-dark-plus-invert-hl-todo nil)
 ```
 
-### Support for Solaire-Mode
+### Support for Solaire-Mode 🙃
 
 The following snippet turns on solaire-mode support.
 
@@ -114,7 +114,7 @@ The following snippet turns on solaire-mode support.
   (load-theme 'vscode-dark-plus t))
 ```
 
-### More Screenshots
+### More Screenshots 🍀
 
 
 ![alt text](./screenshots/react.png)
