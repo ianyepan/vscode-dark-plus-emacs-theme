@@ -1,10 +1,10 @@
 ;;; vscode-dark-plus-theme.el --- Default Visual Studio Code Dark+ theme -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2020 Ian Y.E. Pan
+;; Copyright (C) 2020-2021 Ian Y.E. Pan
 
 ;; Author: Ian Y.E. Pan
 ;; URL: https://github.com/ianpan870102/vscode-dark-plus-emacs-theme
-;; Version: 1.5.0
+;; Version: 0.0.0
 
 ;; This program is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
