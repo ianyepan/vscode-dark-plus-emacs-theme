@@ -150,7 +150,7 @@
    `(dired-directory                          ((t (:inherit (font-lock-keyword-face)))))
    `(line-number                              ((,class (:inherit default :foreground ,line-num))))
    `(line-number-current-line                 ((,class (:inherit line-number))))
-   `(header-line                                ((,class (:bold nil :foreground ,fg4 :background ,mode-line-bg))))
+   `(header-line                              ((,class (:bold nil :foreground ,fg4 :background ,mode-line-bg))))
 
    `(mode-line                                ((,class (:bold nil :foreground ,fg4 :background ,mode-line-bg))))
    `(mode-line-inactive                       ((,class (:bold nil :foreground ,fg1 :background ,mode-line-bg-dark))))
