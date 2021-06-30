@@ -98,18 +98,11 @@ The following snippet turns on solaire-mode support.
 ```emacs-lisp
 (use-package solaire-mode
   :ensure t
-  :hook ((change-major-mode . turn-on-solaire-mode)
-         (after-revert . turn-on-solaire-mode)
-         (ediff-prepare-buffer . solaire-mode)
-         (minibuffer-setup . solaire-mode-in-minibuffer))
   :config
-  (add-to-list 'solaire-mode-themes-to-face-swap '"vscode-dark-plus")
-  (setq solaire-mode-auto-swap-bg t)
   (solaire-global-mode +1))
 
 (use-package vscode-dark-plus-theme
   :ensure t
-  :after solaire-mode
   :config
   (load-theme 'vscode-dark-plus t))
 ```
