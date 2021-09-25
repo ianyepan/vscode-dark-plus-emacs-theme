@@ -80,7 +80,8 @@
       (numeric           "#b5cea8")
       (mode-line-bg      "#007acc")
       (mode-line-bg-dark "#005aa3")
-      (line-num          "#838383")
+      (line-num          "#858585")
+      (line-num-current  "#c6c6c6")
       (builtin           "#c586c0")
       (keyword           "#569cd6")
       (const             "#4ec9b0")
@@ -149,7 +150,7 @@
    `(success                                  ((,class (:foreground ,ms-bluegreen))))
    `(dired-directory                          ((t (:inherit (font-lock-keyword-face)))))
    `(line-number                              ((,class (:inherit default :foreground ,line-num))))
-   `(line-number-current-line                 ((,class (:inherit line-number))))
+   `(line-number-current-line                 ((,class (:inherit default :foreground ,line-num-current))))
    `(header-line                              ((,class (:bold nil :foreground ,fg4 :background ,bg3))))
 
    `(mode-line                                ((,class (:bold nil :foreground ,fg4 :background ,mode-line-bg))))
