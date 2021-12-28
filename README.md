@@ -8,7 +8,7 @@
 
 <p align="center">
 
-  <a href="https://github.com/ianpan870102/wilmersdorf-emacs-theme">
+  <a href="https://github.com/ianpan870102/vscode-dark-plus-emacs-theme">
     <img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" alt="Maintenance">
   </a>
 
