@@ -494,12 +494,12 @@
    `(swiper-match-face-4                      ((t (:inherit ivy-minibuffer-match-face-4))))
    `(swiper-line-face                         ((t (:foreground ,fg0 :background ,bg4 :extend t))))
 
-   `(git-gutter:added                         ((t (:background ,vc-g :foreground ,vc-g :weight normal))))
-   `(git-gutter:deleted                       ((t (:background ,vc-r :foreground ,vc-r :weight normal))))
-   `(git-gutter:modified                      ((t (:background ,vc-b :foreground ,vc-b :weight normal))))
-   `(git-gutter-fr:added                      ((t (:background ,vc-g :foreground ,vc-g :weight normal))))
-   `(git-gutter-fr:deleted                    ((t (:background ,vc-r :foreground ,vc-r :weight normal))))
-   `(git-gutter-fr:modified                   ((t (:background ,vc-b :foreground ,vc-b :weight normal))))
+   `(git-gutter:added                         ((t (:foreground ,vc-g :weight normal))))
+   `(git-gutter:deleted                       ((t (:foreground ,vc-r :weight normal))))
+   `(git-gutter:modified                      ((t (:foreground ,vc-b :weight normal))))
+   `(git-gutter-fr:added                      ((t (:foreground ,vc-g :weight normal))))
+   `(git-gutter-fr:deleted                    ((t (:foreground ,vc-r :weight normal))))
+   `(git-gutter-fr:modified                   ((t (:foreground ,vc-b :weight normal))))
 
    `(diff-hl-insert                           ((t (:background ,vc-g :foreground ,vc-g))))
    `(diff-hl-delete                           ((t (:background ,vc-r :foreground ,vc-r))))
