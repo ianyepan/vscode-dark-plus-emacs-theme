@@ -28,7 +28,7 @@
 
 <br/>
 
-![alt text](./screenshots/cpp.png)
+![alt text](./screenshots/mac.png)
 
 <br/>
 
