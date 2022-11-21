@@ -59,6 +59,16 @@
   :type 'boolean
   :group 'dark-plus)
 
+(defcustom vscode-dark-plus-render-line-highlight 'default
+  "Controls rendering of the current line highlight."
+  :type '(radio
+          (const :tag "None" none)
+          (const :tag "Gutter" gutter)
+          (const :tag "Line" line)
+          (const :tag "Gutter and Line" all)
+          (const :tag "Default" default))
+  :group 'dark-plus)
+
 (let ((class '((class color) (min-colors 89)))
       (fg0               "#aeafad")
       (fg1               "#d4d4d4") ; default fg
@@ -135,7 +145,11 @@
    `(region                                   ((,class (:background ,bg-hl :distant-foreground ,fg0 :extend nil))))
    `(secondary-selection                      ((,class (:inherit region))))
    `(highlight                                ((,class (:foreground "#4db2ff" :underline t)))) ; link hover
-   `(hl-line                                  ((,class (:background ,bg3))))
+   `(hl-line                                  ((,class ,(pcase vscode-dark-plus-render-line-highlight
+                                                          ((or 'line 'all)
+                                                           `(:background ,bg1 :box (:color ,bg3 :line-width (0 . -1))))
+                                                          ('none `(:background ,bg1))
+                                                          ('default `(:background ,bg3))))))
    `(fringe                                   ((,class (:background nil :foreground ,fg4))))
    `(cursor                                   ((,class (:background ,fg1))))
    `(show-paren-match-face                    ((,class (:background ,warning))))
@@ -150,7 +164,12 @@
    `(success                                  ((,class (:foreground ,ms-bluegreen))))
    `(dired-directory                          ((t (:inherit (font-lock-keyword-face)))))
    `(line-number                              ((,class (:inherit default :foreground ,line-num))))
-   `(line-number-current-line                 ((,class (:inherit default :foreground ,line-num-current))))
+   `(line-number-current-line                 ((,class (:inherit default :foreground ,line-num-current
+                                                                 ,@(pcase vscode-dark-plus-render-line-highlight
+                                                                     ((or 'gutter 'all)
+                                                                      `(:background ,bg1 :box (:color ,bg3 :line-width (0 . -1))))
+                                                                     ((or 'none 'default)
+                                                                      `(:background ,bg1)))))))
    `(header-line                              ((,class (:bold nil :foreground ,fg4 :background ,bg3))))
 
    `(mode-line                                ((,class (:bold nil :foreground ,fg4 :background ,mode-line-bg))))
@@ -532,6 +551,10 @@
    `(highlight-numbers-number                 ((t (:foreground ,numeric))))
    `(highlight-operators-face                 ((t (:inherit default))))
    `(highlight-symbol-face                    ((t (:background "#343a40"))))
+
+   `(highlight-thing                          ((t ,(pcase vscode-dark-plus-render-line-highlight
+                                                     ('default `(:inherit region))
+                                                     (_ `(:background ,bg3))))))
 
    `(window-divider                           ((t (:foreground "gray40"))))
    `(window-divider-last-pixel                ((t (:foreground "gray20"))))

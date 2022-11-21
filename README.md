@@ -89,6 +89,9 @@ You can set a few options to customize some of the faces.
 
 ;; Avoid inverting hl-todo face
 (setq vscode-dark-plus-invert-hl-todo nil)
+
+;; Configure current line highlighting style (works best with Emacs 28 or newer)
+(setq vscode-dark-plus-render-line-highlight 'line)
 ```
 
 ### Support for Solaire-Mode 🙃
