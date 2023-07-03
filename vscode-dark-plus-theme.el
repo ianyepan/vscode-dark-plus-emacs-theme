@@ -135,6 +135,9 @@
    `(font-lock-doc-face                       ((,class (:foreground ,doc))))
    `(font-lock-function-name-face             ((,class (:foreground ,func :bold nil))))
    `(font-lock-keyword-face                   ((,class (:bold nil :foreground ,keyword))))
+   `(font-lock-number-face                    ((,class (:foreground ,numeric))))
+   `(font-lock-operator-face                  ((,class (:inherit default))))
+   `(font-lock-punctuation-face               ((,class (:inherit default))))
    `(font-lock-string-face                    ((,class (:foreground ,str))))
    `(font-lock-type-face                      ((,class (:foreground ,type ))))
    `(font-lock-variable-name-face             ((,class (:foreground ,var))))
@@ -150,6 +153,7 @@
                                                            `(:background ,bg1 :box (:color ,bg3 :line-width (0 . -1))))
                                                           ('none `(:background ,bg1))
                                                           ('default `(:background ,bg3))))))
+   `(fill-column-indicator                    ((,class (:foreground "#5a5a5a")))) ; editorRuler.foreground
    `(fringe                                   ((,class (:background unspecified :foreground ,fg4))))
    `(cursor                                   ((,class (:background ,fg1))))
    `(show-paren-match-face                    ((,class (:background ,warning))))
