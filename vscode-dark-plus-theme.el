@@ -201,7 +201,7 @@
    `(org-level-7                              ((,class (:bold nil :foreground ,ms-lightorange))))
    `(org-level-8                              ((,class (:bold nil :foreground ,ms-red))))
    `(org-code                                 ((,class (:foreground ,ms-orange))))
-   `(org-hide                                 ((,class (:foreground ,fg4))))
+   `(org-hide                                 ((,class (:foreground ,bg1))))
    `(org-date                                 ((,class (:underline t :foreground ,var) )))
    `(org-footnote                             ((,class (:underline t :foreground ,fg4))))
    `(org-link                                 ((,class (:underline t :foreground ,type ))))
