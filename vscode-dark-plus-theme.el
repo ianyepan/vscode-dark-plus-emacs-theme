@@ -209,7 +209,7 @@
    `(org-block                                ((,class (:foreground ,fg2 :background ,bg0 :extend t))))
    `(org-quote                                ((,class (:inherit org-block :slant italic))))
    `(org-verse                                ((,class (:inherit org-block :slant italic))))
-   `(org-todo                                 ((,class (,@(when vscode-dark-plus-box-org-todo (list :box '(:line-width 1 :color ,ms-lightred)))
+   `(org-todo                                 ((,class (,@(when vscode-dark-plus-box-org-todo (list :box `(:line-width 1 :color ,ms-lightred)))
                                                         :foreground ,ms-lightred :bold nil))))
    `(org-done                                 ((,class (:box (:line-width 1 :color ,ms-lightgreen) :foreground ,ms-lightgreen :bold nil ))))
    `(org-warning                              ((,class (:underline t :foreground ,warning))))
