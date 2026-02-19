@@ -6,6 +6,8 @@
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/EmacsIcon.svg/120px-EmacsIcon.svg.png" />
 </p>
 
+
+
 <p align="center">
 
   <a href="https://github.com/ianpan870102/vscode-dark-plus-emacs-theme">
@@ -20,6 +22,16 @@
     <img src="https://img.shields.io/badge/License-GPL%20v3-blue.svg" alt="GPL License">
   </a>
 
+</p>
+
+<p align="center">
+<a href="https://star-history.com/#ianyepan/vscode-dark-plus-emacs-theme&Date">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" width="600" srcset="https://api.star-history.com/svg?repos=ianyepan/vscode-dark-plus-emacs-theme&type=Date&theme=dark" />
+    <source media="(prefers-color-scheme: light)" width="600" srcset="https://api.star-history.com/svg?repos=ianyepan/vscode-dark-plus-emacs-theme&type=Date" />
+    <img alt="Star History Chart" width="600" src="https://api.star-history.com/svg?repos=ianyepan/vscode-dark-plus-emacs-theme&type=Date" />
+  </picture>
+</a>
 </p>
 
 <br/>
