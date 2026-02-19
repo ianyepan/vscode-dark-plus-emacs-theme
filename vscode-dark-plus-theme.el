@@ -451,8 +451,8 @@
    `(web-mode-json-key-face                   ((,class (:foreground ,str))))
    `(web-mode-json-context-face               ((,class (:foreground ,str))))
 
-   `(diff-header                              ((t (:foreground ,ms-bluegreen :background nil))))
-   `(diff-file-header                         ((t (:foreground ,fg3 :background nil))))
+   `(diff-header                              ((t (:foreground ,ms-bluegreen :background unspecified))))
+   `(diff-file-header                         ((t (:foreground ,fg3 :background unspecified))))
    `(diff-hunk-header                         ((t (:foreground ,fg4 :background ,bg3))))
    `(diff-added                               ((t (:foreground ,fg2 :background ,ms-green-bg))))
    `(diff-removed                             ((t (:foreground ,fg2 :background ,ms-red-bg))))
