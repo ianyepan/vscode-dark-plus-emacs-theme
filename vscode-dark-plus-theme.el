@@ -572,6 +572,9 @@
    `(tree-sitter-hl-face:variable.special     ((t (:inherit font-lock-keyword-face))))
    `(tree-sitter-hl-face:keyword              ((t (:foreground ,ms-magenta))))
 
+   `(highlight-indentation-face                 ((t (:background ,bg2))))
+   `(highlight-indentation-current-column-face  ((t (:background ,bg3))))
+
    `(lsp-ui-doc-background                    ((t (:background ,bg2))))
 
    `(lsp-ui-peek-header                       ((t (:foreground "white" :background ,bg3))))
